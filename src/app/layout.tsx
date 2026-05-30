@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import LiveChat from "@/components/LiveChat";
 
 export const metadata: Metadata = {
   title: "LuckyAssist Pro | Philippine BPO & Virtual Assistant Services",
@@ -32,6 +33,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen bg-white text-navy antialiased">
         {children}
+        <LiveChat />
       </body>
     </html>
   );
